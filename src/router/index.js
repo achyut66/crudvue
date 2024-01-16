@@ -7,6 +7,7 @@ import StatPage from '../views/StatPage.vue';
 import BookmarkPage from '../views/BookmarkPage.vue';
 import FilesPage from '../views/FilesPage.vue';
 import BannerPage from '../views/BannerPage.vue';
+import DashPage from '../views/DashPage.vue';
 
 const routes = [
   { path: '/homepage', component: HomePage },
@@ -15,6 +16,7 @@ const routes = [
   { path: '/bookmarkpage', component: BookmarkPage },
   { path: '/filespage', component: FilesPage },
   { path: '/bannerpage', component: BannerPage },
+  { path: '/dashpage', component: DashPage },
 ];
 
 const router = createRouter({

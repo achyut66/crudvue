@@ -11,10 +11,7 @@ export default {
 };
 </script>
 
-<style>
-.home_page{
-  text-align: center;
-  color: blue;
-}
+<style src="../css/style.css">
+
 /* Add your styles here */
 </style>
