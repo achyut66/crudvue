@@ -45,14 +45,7 @@ export default {
 };
 </script>
 
-<style scoped>
-.btnClass {
-  text-align: right;
-  border-radius: 6px;
-  padding: 7px 9px;
-}
-.headPage {
-  text-align: left;
-}
+<style src="../css/style.css">
+
 /* Add your styles here */
 </style>
