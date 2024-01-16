@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <div class="headPage">Banners</div>
-    <div class="btnClass"><button class="btn btn-success">Add New</button></div>
+    <div class="btnClass"><router-link to="/addproduct"><button class="btn btn-success">Add New</button></router-link></div>
     <div class="card">
       <table class="table table-bordered table responsive">
         <thead class="">
@@ -17,12 +17,33 @@
             <td>#</td>
           </tr>
         </thead>
+        
         <tbody>
           <tr>
             <td>1.</td>
             <td>Laptop</td>
             <td>Dell</td>
             <td>10</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              || <span> <button class="btn btn-danger">Delete</button></span>
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Laptop</td>
+            <td>MacBool</td>
+            <td>25</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              || <span> <button class="btn btn-danger">Delete</button></span>
+            </td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Mobile</td>
+            <td>Nokia</td>
+            <td>15</td>
             <td>
               <button class="btn btn-warning">Edit</button>
               || <span> <button class="btn btn-danger">Delete</button></span>

@@ -6,9 +6,9 @@ import router from './router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'boxicons/css/boxicons.min.css';
+import 'select2/dist/css/select2.css';
 // Your Vue component or other JavaScript code
 
 // import { BootstrapVue } from 'bootstrap-vue';
 
-// createApp(App).use(BootstrapVue);
 createApp(App).use(router).mount('#app');
