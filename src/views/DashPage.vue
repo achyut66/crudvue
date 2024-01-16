@@ -33,12 +33,12 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-6">
-          <table class="table table-bordered table-responsive striped">
+          <table class="table table-bordered table-responsive table-striped">
             <thead class="thead">
-              <tr>
+              <tr class="theadclass">
                 <td colspan="4">Banners</td>
               </tr>
-              <tr>
+              <tr class="tbodyclass">
                 <td>S.No</td>
                 <td>Banner's Name</td>
                 <td>Type</td>
@@ -47,19 +47,34 @@
             <tbody>
               <tr>
                 <td>1.</td>
-                <td>New Banner</td>
+                <td>Banner1</td>
+                <td>JPG</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Banner2</td>
+                <td>JPG</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Banner3</td>
+                <td>JPG</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Banner4</td>
                 <td>JPG</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="col-md-6">
-          <table class="table table-bordered table-responsive striped">
+          <table class="table table-bordered table-responsive table-striped">
             <thead class="thead">
-              <tr>
+              <tr class="theadclass">
                 <td colspan="4">Products</td>
               </tr>
-              <tr>
+              <tr class="tfootclass">
                 <td>S.No</td>
                 <td>Products's Name</td>
                 <td>Category</td>
@@ -70,6 +85,21 @@
                 <td>1.</td>
                 <td>Dell</td>
                 <td>Pc</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>MacBookAir</td>
+                <td>Pc</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Nokia</td>
+                <td>Mobiles</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>IPhone13</td>
+                <td>Mobiles</td>
               </tr>
             </tbody>
           </table>
@@ -121,4 +151,10 @@ export default {};
 .anothercon{
   margin-top:25px;
 }
+.theadclass{
+  background-color: #A9CCE3;
+}
+/* .tfootclass{
+  background-color: #A9CCE3;
+} */
 </style>

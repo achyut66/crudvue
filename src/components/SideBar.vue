@@ -38,7 +38,7 @@
     
     <!--Container Main start-->
     <div class="height-100 bg-light">
-        <HomePage />
+        <DashPage />
         <router-view />
     </div>
     </body>
