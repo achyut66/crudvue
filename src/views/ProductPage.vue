@@ -1,12 +1,11 @@
 <!-- AboutPage.vue -->
 <template>
   <div class="container">
-    <div class="headPage">Banners</div>
     <div class="btnClass"><router-link to="/addproduct"><button class="btn btn-success">Add New</button></router-link></div>
     <div class="card">
-      <table class="table table-bordered table responsive">
+      <table class="table table-bordered table responsive table-striped">
         <thead class="">
-          <tr>
+          <tr class="theadclass">
             <td colspan="5">Products Name</td>
           </tr>
           <tr>

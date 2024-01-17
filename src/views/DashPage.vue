@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+  <div class="card">
+  <div class="card-header dashcard"><h2>XYZ Company</h2></div>
+  </div>
     <div class="col-md-12 col12">
       <div class="row">
         <div class="col-md-4">
@@ -15,7 +18,7 @@
             <hr class="hr" />
             <p class="pclasss">No Of Products</p>
             <span><i class="bx bx-notepad banneri"></i></span>
-            <span class="count">10</span>
+            <span class="count">20</span>
           </div>
         </div>
         <div class="col-md-4">
@@ -23,7 +26,7 @@
             <hr class="hr" />
             <p class="pclasss">No Of Files</p>
             <span><i class="bx bx-notepad banneri"></i></span
-            ><span class="count">10</span>
+            ><span class="count">15</span>
           </div>
         </div>
       </div>
@@ -151,10 +154,7 @@ export default {};
 .anothercon{
   margin-top:25px;
 }
-.theadclass{
-  background-color: #A9CCE3;
+.dashcard{
+  font-family: cursive;
 }
-/* .tfootclass{
-  background-color: #A9CCE3;
-} */
 </style>
