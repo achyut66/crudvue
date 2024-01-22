@@ -28,26 +28,6 @@
               || <span> <button class="btn btn-danger">Delete</button></span>
             </td>
           </tr>
-          <tr>
-            <td>2.</td>
-            <td>Laptop</td>
-            <td>MacBool</td>
-            <td>25</td>
-            <td>
-              <button class="btn btn-warning">Edit</button>
-              || <span> <button class="btn btn-danger">Delete</button></span>
-            </td>
-          </tr>
-          <tr>
-            <td>3.</td>
-            <td>Mobile</td>
-            <td>Nokia</td>
-            <td>15</td>
-            <td>
-              <button class="btn btn-warning">Edit</button>
-              || <span> <button class="btn btn-danger">Delete</button></span>
-            </td>
-          </tr>
         </tbody>
         <tfoot>
           <tr>
@@ -61,7 +41,7 @@
 
 <script>
 export default {
-  name: "AboutPage",
+  name: "ProductPage",
 };
 </script>
 

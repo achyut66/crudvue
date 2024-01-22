@@ -17,6 +17,7 @@ app.post('/api/product_details', (req, res) => {
   res.status(200).send('Data received successfully');
 });
 
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

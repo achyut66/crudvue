@@ -74,10 +74,11 @@ export default {
   try {
     console.log('Sending data:', this.formData);
     const response = await axios.post('http://localhost:3000/api/product_details', this.formData);
-    console.log('Item created:', response);
+    // this.$router.push({ name: '../views/productpage' });
+    alert('Item Inserted Successfully:', response);
     this.clearForm();
   } catch (error) {
-    console.error('Error saving data in vue:', error);
+    alert('Error saving data in vue:', error);
   }
 },
     clearForm() {
