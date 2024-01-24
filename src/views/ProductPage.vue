@@ -6,26 +6,28 @@
       <table class="table table-bordered table responsive table-striped">
         <thead class="">
           <tr class="theadclass">
-            <td colspan="5">Products Name</td>
+            <td colspan="6">Products Name</td>
           </tr>
           <tr>
             <td>S.No.</td>
+            <td>Product Code No</td>
+            <td>Product Category</td>
             <td>Products Name</td>
-            <td>Category</td>
             <td>Quantity</td>
             <td>#</td>
           </tr>
         </thead>
         
         <tbody>
-          <tr>
-            <td>1.</td>
-            <td>Laptop</td>
-            <td>Dell</td>
-            <td>10</td>
+          <tr v-for="(product, index) in products" :key="index">
+            <td>{{ index + 1 }}</td>
+            <td>{{ product.p_code_no }}</td>
+            <td>{{ product.category }}</td>
+            <td>{{ product.p_name }}</td>
+            <td>{{ product.quantity }}</td>
             <td>
               <button class="btn btn-warning">Edit</button>
-              || <span> <button class="btn btn-danger">Delete</button></span>
+              || <span><button class="btn btn-danger">Delete</button></span>
             </td>
           </tr>
         </tbody>
@@ -40,8 +42,24 @@
 </template>
 
 <script>
-export default {
-  name: "ProductPage",
+import axios from 'axios'
+export default {name: "ProductPage",
+  data() {
+    return {
+      products: [], // Initialize the products array
+    };
+  },
+  mounted() {
+    axios.get('http://localhost:3000/api/product_details')
+  .then((resp) => {
+    this.products = resp.data;
+    console.log('Response:', resp.data);
+  })
+  .catch((error) => {
+    console.error('Error fetching data:', error);
+  });
+
+  }
 };
 </script>
 

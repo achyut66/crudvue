@@ -42,6 +42,20 @@ app.post('/api/product_details', (req, res) => {
     }
   });
 });
+app.get('/api/product_details', (req, res) => {
+  // Perform the database retrieval
+  const sql = 'SELECT * FROM product_details';
+  db.query(sql, (err, result) => {
+    if (err) {
+      console.error('Error retrieving data from MySQL:', err);
+      res.status(500).send('Internal Server Error');
+    } else {
+      console.log('Data retrieved from MySQL:', result);
+      res.status(200).json(result);
+    }
+  });
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
