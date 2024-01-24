@@ -53,12 +53,17 @@
         <button class="btn btn-success" @click="saveData">Save Data</button>
       </div>
     </div>
+    <alert-modal ref="alertModal"></alert-modal>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import AlertModal from "@/components/AlertModal.vue";
 export default {
+  components: {
+    AlertModal,
+  },
   data() {
     return {
       formData: {
@@ -70,17 +75,26 @@ export default {
     };
   },
   methods: {
-    async saveData() {
+  async saveData() {
   try {
     console.log('Sending data:', this.formData);
     const response = await axios.post('http://localhost:3000/api/product_details', this.formData);
-    // this.$router.push({ name: '../views/productpage' });
-    alert('Item Inserted Successfully:', response);
-    this.clearForm();
+
+    console.log('Response:', response);
+
+    if (response.status === 200) {
+      this.$refs.alertModal.openModal('Data Saved Successfully', response);
+      
+    } else {
+      this.$refs.alertModal.openModal('Failed to save data: ' + response.statusText);
+    }
   } catch (error) {
-    alert('Error saving data in vue:', error);
+    console.error('Error saving data in vue:', error);
+    this.$refs.alertModal.openModal('Error saving data in vue: ' + error.message);
   }
+  this.$router.push('/productpage');
 },
+
     clearForm() {
       // Clear form data after submission
       this.formData = {
