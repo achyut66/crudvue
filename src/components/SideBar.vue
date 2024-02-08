@@ -1,5 +1,6 @@
 
 <template>
+<!-- new sidebar can be added in here -->
   <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
@@ -35,7 +36,7 @@
             <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
         </nav>
     </div>
-    
+
     <div class="height-100 bg-light">
         <router-view />
     </div>
