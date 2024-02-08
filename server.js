@@ -55,6 +55,26 @@ app.get('/api/product_details', (req, res) => {
     }
   });
 });
+// Handle PUT request to update product details
+// app.put('/api/product_details/:id', (req, res) => {
+//   const productId = req.params.id;
+//   const { p_code_no, category, p_name, quantity } = req.body;
+
+//   // Validate the received data if necessary
+
+//   // Perform the database update
+//   const sql = 'UPDATE product_details SET p_code_no=?, category=?, p_name=?, quantity=? WHERE id=?';
+//   db.query(sql, [p_code_no, category, p_name, quantity, productId], (err, result) => {
+//     if (err) {
+//       console.error('Error updating data in MySQL:', err);
+//       res.status(500).send('Internal Server Error');
+//     } else {
+//       console.log('Data updated in MySQL:', result);
+//       res.status(200).json({ message: 'Data updated successfully' });
+//     }
+//   });
+// });
+
 
 
 app.listen(PORT, () => {

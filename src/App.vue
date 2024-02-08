@@ -8,12 +8,18 @@
 
 <script>
 import SideBar from './components/SideBar.vue';
+// import DashPage from './views/DashPage.vue';
 
 export default {
   name: 'App',
   components: {
     SideBar,
+    // DashPage,
   },
+  created() {
+    // Redirect to /dashpage route when the component is created
+    this.$router.push('/dashpage');
+  }
 };
 </script>
 

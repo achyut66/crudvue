@@ -1,3 +1,4 @@
+
 <template>
   <div class="col-md-12">
     <div class="card">
@@ -59,17 +60,11 @@
 
 <script>
 import axios from 'axios';
-// import $ from 'jquery';
 import AlertModal from "@/components/AlertModal.vue";
-
 export default {
   components: {
     AlertModal,
   },
-  // mounted() {
-  //   // Initialize Select2 on the elements
-  //   $('.select2').select2();
-  // },
   data() {
     return {
       formData: {
@@ -81,25 +76,25 @@ export default {
     };
   },
   methods: {
-    async saveData() {
-      try {
-        console.log('Sending data:', this.formData);
-        const response = await axios.post('http://localhost:3000/api/product_details', this.formData);
+  async saveData() {
+  try {
+    console.log('Sending data:', this.formData);
+    const response = await axios.post('http://localhost:3000/api/product_details', this.formData);
 
-        console.log('Response:', response);
+    console.log('Response:', response);
 
-        if (response.status === 200) {
-          this.$refs.alertModal.openModal('Data Saved Successfully', response);
-          
-        } else {
-          this.$refs.alertModal.openModal('Failed to save data: ' + response.statusText);
-        }
-      } catch (error) {
-        console.error('Error saving data in vue:', error);
-        this.$refs.alertModal.openModal('Error saving data in vue: ' + error.message);
-      }
-      this.$router.push('/productpage');
-    },
+    if (response.status === 200) {
+      this.$refs.alertModal.openModal('Data Saved Successfully', response);
+      
+    } else {
+      this.$refs.alertModal.openModal('Failed to save data: ' + response.statusText);
+    }
+  } catch (error) {
+    console.error('Error saving data in vue:', error);
+    this.$refs.alertModal.openModal('Error saving data in vue: ' + error.message);
+  }
+  this.$router.push('/productpage');
+},
 
     clearForm() {
       // Clear form data after submission
@@ -113,7 +108,6 @@ export default {
   },
 };
 </script>
-
 <style src="../css/style.css">
 
 </style>

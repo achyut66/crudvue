@@ -114,47 +114,6 @@
 <script>
 export default {};
 </script>
-<style>
-.col4 {
-  background-image: url("../assets/img1.jpg");
-  height: 135px;
-  border-radius: 15px;
-}
-.col5 {
-  background-image: url("../assets/img2.jpg");
-  height: 135px;
-  border-radius: 15px;
-}
-.col6 {
-  background-image: url("../assets/img3.jpg");
-  height: 135px;
-  border-radius: 15px;
-}
-.hr {
-  border: 2px solid blue;
-  width: 135px;
-}
-.pclasss {
-  color: navy;
-  font-weight: bold;
-  font-family: cursive;
-}
-.banneri {
-  font-size: 2.5em;
-}
-.count {
-  font-family: cursive;
-  margin-left: 50px;
-  margin-top: -35px;
-  font-size: 22px;
-}
-.col12 {
-  margin-top: 65px;
-}
-.anothercon{
-  margin-top:25px;
-}
-.dashcard{
-  font-family: cursive;
-}
+<style src="../css/style.css">
+
 </style>

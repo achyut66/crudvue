@@ -26,8 +26,10 @@
             <td>{{ product.p_name }}</td>
             <td>{{ product.quantity }}</td>
             <td>
-              <button class="btn btn-warning">Edit</button>
-              || <span><button class="btn btn-danger">Delete</button></span>
+              <button @click="editProduct(product.id)" class="btn btn-warning">Edit</button>
+              || <span>
+              <button @click="deleteProduct(product.id)" class="btn btn-danger">Delete</button>
+              </span>
             </td>
           </tr>
         </tbody>
